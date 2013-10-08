@@ -37,7 +37,7 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label">Receiver</label>
+                <label class="control-label">Amount</label>
                 <div class="input-group">
                     <input type="text" name="amount" class="form-control">
                     <span class="input-group-addon">$</span>
