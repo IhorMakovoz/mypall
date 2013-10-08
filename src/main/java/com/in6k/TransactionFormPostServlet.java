@@ -25,8 +25,5 @@ public class TransactionFormPostServlet extends HttpServlet{
         logger.warn("Amount: " + amount);
 
         request.getRequestDispatcher("/WEB-INF/transaction-form-success.jsp").include(request, response);
-
-        //RequestDispatcher dispatcher = request.getRequestDispatcher("transaction-form-success.jsp");
-        //dispatcher.forward(request, response);
     }
 }

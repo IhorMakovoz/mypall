@@ -86,7 +86,7 @@
       <file leaf-file-name="TransactionFormPostServlet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionFormPostServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="25" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.71811026">
+            <state line="25" column="0" selection-start="948" selection-end="948" vertical-scroll-proportion="0.5385827">
               <folding />
             </state>
           </provider>
@@ -139,8 +139,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/TransactionFormSuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/TransactionForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/transaction-form-success.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/in6k/TransactionFormPostServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/transaction-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/in6k/TransactionFormPostServlet.java" />
       </list>
     </option>
   </component>
@@ -828,7 +828,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionFormPostServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="25" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.71811026">
+        <state line="25" column="0" selection-start="948" selection-end="948" vertical-scroll-proportion="0.5385827">
           <folding />
         </state>
       </provider>
