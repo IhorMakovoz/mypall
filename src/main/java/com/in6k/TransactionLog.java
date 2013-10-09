@@ -42,12 +42,13 @@ public class TransactionLog {
 
         rs.close();
         statement.close();
-        connection.close();
+        //connection.close();
 
         return result;
     }
 
     private Transaction createTransaction(ResultSet rs) throws SQLException {
-        return new Transaction(rs.getTimestamp("date_at"), rs.getString("credit_account"), rs.getString("debit_account"), rs.getInt("amount"));
+        return new Transaction(rs.getTimestamp("date_at"), rs.getString("credit_account"),
+                               rs.getString("debit_account"), rs.getInt("amount"));
     }
 }

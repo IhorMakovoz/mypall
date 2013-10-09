@@ -23,7 +23,7 @@
                 <label class="control-label">Sender</label>
                 <select class="form-control" name="sender">
                     <option value="John Smith">John Smith</option>
-                    <option value="Bob Marley">ScratchCart</option>
+                    <option value="ScratchCart">ScratchCart</option>
                     <option value="System">System</option>
                 </select>
             </div>
