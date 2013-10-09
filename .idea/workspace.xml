@@ -7,15 +7,17 @@
     <file path="/Servlet.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381155642584" ignored="false" />
     <file path="/web.xml" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381162321362" ignored="false" />
     <file path="/Bootstrap.html" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381143279644" ignored="false" />
-    <file path="/fragment.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381231203202" ignored="false" />
+    <file path="/fragment.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381300940101" ignored="false" />
     <file path="/Dummy.txt" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381147605684" ignored="false" />
     <file path="/Test.jsp" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381151700288" ignored="false" />
     <file path="/TransactionForm.jsp" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381212370264" ignored="false" />
-    <file path="/TransactionFormPostServlet.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381258773084" ignored="false" />
+    <file path="/TransactionFormPostServlet.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381300452732" ignored="false" />
     <file path="/TransactionFormSuccess.jsp" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381212062179" ignored="false" />
     <file path="/transaction-form.jsp" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381226165107" ignored="false" />
-    <file path="/TransactionLog.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381262012152" ignored="false" />
-    <file path="/Transaction.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381261748453" ignored="false" />
+    <file path="/TransactionLog.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381301439268" ignored="false" />
+    <file path="/Transaction.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381301684972" ignored="false" />
+    <file path="/TransactionConsoleWriter.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381300482426" ignored="false" />
+    <file path="/DatabaseHelper.java" changelist="df91a170-c13c-4d99-810e-9edd8f979f6b" time="1381301014573" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
       <file leaf-file-name="TransactionFormPostServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionFormPostServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="29" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0">
+            <state line="22" column="22" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,8 +90,21 @@
       <file leaf-file-name="TransactionLog.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="16" selection-start="1548" selection-end="1553" vertical-scroll-proportion="0.9544741">
-              <folding />
+            <state line="36" column="19" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.6394231">
+              <folding>
+                <element signature="e#1248#1261#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/DatabaseHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="57" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,36 +112,18 @@
       <file leaf-file-name="Transaction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="62" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+            <state line="52" column="0" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="TransactionConsoleWriter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionConsoleWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="22" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.0">
+            <state line="4" column="27" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="28" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -151,9 +148,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/transaction-form.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/in6k/TransactionConsoleWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/in6k/TransactionFormPostServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/in6k/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/TransactionLog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/in6k/TransactionFormPostServlet.java" />
       </list>
     </option>
   </component>
@@ -626,6 +625,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -658,6 +662,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -679,7 +684,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -748,24 +752,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="62" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="22" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="102" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#1248#1261#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -903,7 +895,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="22" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.0">
+        <state line="66" column="22" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.32519424">
           <folding />
         </state>
       </provider>
@@ -924,24 +916,42 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionFormPostServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="29" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0">
+        <state line="52" column="0" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/Transaction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionConsoleWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="62" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+        <state line="4" column="27" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="57" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionFormPostServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="22" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/TransactionLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="16" selection-start="1548" selection-end="1553" vertical-scroll-proportion="0.9544741">
-          <folding />
+        <state line="36" column="19" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.6394231">
+          <folding>
+            <element signature="e#1248#1261#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

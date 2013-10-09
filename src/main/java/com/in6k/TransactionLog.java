@@ -9,50 +9,45 @@ public class TransactionLog {
     private  List<Transaction> transactions = new ArrayList<Transaction>();
 
     public void addTransaction (Transaction transaction) throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mypal", "root", "masterkey");
+        Connection connection = DatabaseHelper.getConnection();
+
         String insertTableSQL = "INSERT INTO transactions"
                 + "(date_at, debit_account, credit_account, amount) VALUES"
                 + "(?,?,?,?)";
 
-        PreparedStatement statement = connection.prepareStatement(insertTableSQL);
+        PreparedStatement statement = connection.prepareStatement("INSERT INTO transactions (date_at, debit_account, credit_account, amount)"
+                + " VALUES (?,?,?,?)");
+
         Timestamp ts = new Timestamp(new Date().getTime());
         statement.setTimestamp(1, ts);
-        statement.setString(2, transaction.getDebitor());
+        statement.setString(2, transaction.getDebtor());
         statement.setString(3, transaction.getCreditor());
         statement.setInt(4, transaction.getAmount());
         statement.executeUpdate();
 
         statement.close();
-        connection.close();
-        //transactions.add(transaction);
+        //connection.close();
     }
 
-    public List<Transaction> getAllTransactions() throws ClassNotFoundException, SQLException {
+    public List<Transaction> getTransactions() throws ClassNotFoundException, SQLException {
         List<Transaction> result = new ArrayList<Transaction>();
-        Class.forName("com.mysql.jdbc.Driver");
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mypal", "root", "masterkey");
+
+        Connection connection = DatabaseHelper.getConnection();
         Statement statement = connection.createStatement();
         ResultSet rs = statement.executeQuery("SELECT * from transactions");
 
         while(rs.next()) {
-            result.add(new Transaction(rs));
+            result.add(createTransaction(rs));
         }
 
+        rs.close();
         statement.close();
         connection.close();
 
         return result;
     }
 
-    public void printAllTransactions() throws SQLException, ClassNotFoundException {
-         System.out.println("All transactions: ");
-         List<Transaction> transactions = getAllTransactions();
-         for(Transaction transaction : transactions){
-             transaction.print();
-         }
+    private Transaction createTransaction(ResultSet rs) throws SQLException {
+        return new Transaction(rs.getTimestamp("date_at"), rs.getString("credit_account"), rs.getString("debit_account"), rs.getInt("amount"));
     }
-    /*public List<Transaction> getTransactions() {
-        return transactions;
-    }*/
 }

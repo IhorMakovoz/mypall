@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.*;
 import java.util.Date;
-import java.util.List;
 
 public class TransactionFormPostServlet extends HttpServlet{
 
@@ -18,30 +17,22 @@ public class TransactionFormPostServlet extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         response.setContentType("text/html");
-        String sender = request.getParameter("sender");
-        String receiver = request.getParameter("receiver");
-        String amount = request.getParameter("amount");
-        int amountInt = Integer.parseInt(amount);
-        Timestamp date = new Timestamp(new Date().getTime());
 
-        Transaction t = new Transaction(date, sender, receiver, amountInt);
+        Transaction t = new Transaction(new Timestamp(new Date().getTime()), request.getParameter("sender"),
+            request.getParameter("receiver"), Integer.parseInt(request.getParameter("amount")));
+
         TransactionLog tl = new TransactionLog();
 
         try {
             tl.addTransaction(t);
-            /*List <Transaction> transactions = tl.getTransactions();
+            TransactionConsoleWriter.print(tl.getTransactions());
 
-            for (Transaction transaction: transactions) {
-                transaction.print();
-            }*/
-            tl.printAllTransactions();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
         request.getRequestDispatcher("/WEB-INF/transaction-form-success.jsp").include(request, response);
     }
+
 }
 
