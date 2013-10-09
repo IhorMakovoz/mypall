@@ -1,18 +1,32 @@
 package com.in6k;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Date;
 
 public class Transaction {
     private Date date;
     private String creditor;
-    private String debetor;
+    private String debitor;
     private int amount;
 
-    public Transaction(Date date, String creditor, String debetor, int amount) {
+    public Transaction(Date date, String creditor, String debitor, int amount) {
         this.date = date;
         this.creditor = creditor;
-        this.debetor = debetor;
+        this.debitor = debitor;
         this.amount = amount;
+    }
+
+    public Transaction(ResultSet rs){
+        try {
+            this.date = rs.getTimestamp("date_at");
+            this.creditor = rs.getString("credit_account");
+            this.debitor = rs.getString("debit_account");
+            this.amount = rs.getInt("amount");
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.err.println("Transaction init failed.");
+        }
     }
 
     public Date getDate() {
@@ -31,12 +45,12 @@ public class Transaction {
         this.creditor = creditor;
     }
 
-    public String getDebetor() {
-        return debetor;
+    public String getDebitor() {
+        return debitor;
     }
 
-    public void setDebetor(String debetor) {
-        this.debetor = debetor;
+    public void setDebitor(String debitor) {
+        this.debitor = debitor;
     }
 
     public int getAmount() {
@@ -52,8 +66,12 @@ public class Transaction {
         return "Transaction{" +
                 "date=" + date +
                 ", creditor='" + creditor + '\'' +
-                ", debetor='" + debetor + '\'' +
+                ", debitor='" + debitor + '\'' +
                 ", amount=" + amount +
                 '}';
+    }
+
+    public void print(){
+        System.out.println(this);
     }
 }
